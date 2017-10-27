@@ -2,9 +2,13 @@
 
 const Homey = require('homey');
 const { HomeyAPI } = require('athom-api');
+var allFlows;
 
 class MyApp extends Homey.App {
 	async onInit() {
+		process.on('unhandledRejection', error => {
+            console.error(error.stack);
+        })
 		this.log('MyApp is running...');
 		let allFlows = await this.getFlows();
 		console.log(allFlows);
