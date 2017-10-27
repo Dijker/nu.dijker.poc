@@ -1,7 +1,7 @@
 'use strict';
 
 const Homey = require('homey');
-//const HomeyAPI = require('atom-api');
+const { HomeyAPI } = require('atom-api');
 
 class MyApp extends Homey.App {
 	async onInit() {
@@ -29,7 +29,4 @@ Homey.ManagerSettings.on( 'set', ( args, callback ) => {
 })
 
 /*
-```async onInit(){
-let allFlows = await this.getFlows()
-console.log(allFlows)
-}*/
+*/
