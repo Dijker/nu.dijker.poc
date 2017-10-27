@@ -1,7 +1,7 @@
 'use strict';
 
 const Homey = require('homey');
-const { HomeyAPI } = require('atom-api');
+const { HomeyAPI } = require('athom-api');
 
 class MyApp extends Homey.App {
 	async onInit() {
