@@ -13,5 +13,7 @@
     "author": {
         "name": "Geurt Dijker",
         "email": "geurt@dijker.nu"
-    }
+    },
+    "permissions": [
+      "homey:manager:api" ]
 }
